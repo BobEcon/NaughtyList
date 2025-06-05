@@ -41,23 +41,40 @@ extension Child {
         )
         container.mainContext.insert(
             Child(
-                firstName: "Bad",
-                lastName: "Bunny",
-                naughty: true,
-                smacks: 1,
-                notes: "Conejo Malo"
+                firstName: "Draco",
+                lastName: "Malfoy",
+                naughty: false,
+                smacks: 5,
+                notes: "Watch out for wands"
             )
         )
         container.mainContext.insert(
             Child(
-                firstName: "Bad",
-                lastName: "Bunny",
-                naughty: true,
-                smacks: 1,
-                notes: "Conejo Malo"
+                firstName: "Lisa",
+                lastName: "Simpson",
+                naughty: false,
+                smacks: 0,
+                notes: "Always tries her best"
             )
         )
-        
+        container.mainContext.insert(
+            Child(
+                firstName: "Veruca",
+                lastName: "Salt",
+                naughty: true,
+                smacks: 3,
+                notes: "Keep away from candy"
+            )
+        )
+        container.mainContext.insert(
+            Child(
+                firstName: "Fred",
+                lastName: "Rogers",
+                naughty: false,
+                smacks: 0,
+                notes: "Everyone's favourite neighbour"
+            )
+        )
         return container
     }
 }
