@@ -6,30 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C51F93022DF2655300177D85 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F92FA2DF2655300177D85 /* DetailView.swift */; };
+		C51F93032DF2655300177D85 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F92FB2DF2655300177D85 /* ListView.swift */; };
+		C51F93042DF2655300177D85 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F92FE2DF2655300177D85 /* Child.swift */; };
+		C51F93052DF2655300177D85 /* NaughtyListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F93002DF2655300177D85 /* NaughtyListApp.swift */; };
+		C51F93062DF2655300177D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51F92FD2DF2655300177D85 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		C51F92FA2DF2655300177D85 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C51F92FB2DF2655300177D85 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C51F92FD2DF2655300177D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C51F92FE2DF2655300177D85 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		C51F92FF2DF2655300177D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51F93002DF2655300177D85 /* NaughtyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaughtyListApp.swift; sourceTree = "<group>"; };
 		C5CD476F2DF0F8A60019AAF2 /* NaughtyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaughtyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C5CD477E2DF0F9420019AAF2 /* Exceptions for "NaughtyList" folder in "NaughtyList" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C5CD476E2DF0F8A60019AAF2 /* NaughtyList */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C5CD47712DF0F8A60019AAF2 /* NaughtyList */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C5CD477E2DF0F9420019AAF2 /* Exceptions for "NaughtyList" folder in "NaughtyList" target */,
-			);
-			path = NaughtyList;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C5CD476C2DF0F8A60019AAF2 /* Frameworks */ = {
@@ -42,10 +35,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C51F92FC2DF2655300177D85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C51F92FA2DF2655300177D85 /* DetailView.swift */,
+				C51F92FB2DF2655300177D85 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C51F93012DF2655300177D85 /* NaughtyList */ = {
+			isa = PBXGroup;
+			children = (
+				C51F92FD2DF2655300177D85 /* Assets.xcassets */,
+				C51F92FF2DF2655300177D85 /* Info.plist */,
+				C51F93002DF2655300177D85 /* NaughtyListApp.swift */,
+			);
+			path = NaughtyList;
+			sourceTree = "<group>";
+		};
+		C51F93082DF2655E00177D85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C51F92FE2DF2655300177D85 /* Child.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C5CD47662DF0F8A60019AAF2 = {
 			isa = PBXGroup;
 			children = (
-				C5CD47712DF0F8A60019AAF2 /* NaughtyList */,
+				C51F93012DF2655300177D85 /* NaughtyList */,
+				C51F92FC2DF2655300177D85 /* Views */,
+				C51F93082DF2655E00177D85 /* Models */,
 				C5CD47702DF0F8A60019AAF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,9 +94,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C5CD47712DF0F8A60019AAF2 /* NaughtyList */,
 			);
 			name = NaughtyList;
 			packageProductDependencies = (
@@ -122,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51F93062DF2655300177D85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51F93022DF2655300177D85 /* DetailView.swift in Sources */,
+				C51F93032DF2655300177D85 /* ListView.swift in Sources */,
+				C51F93042DF2655300177D85 /* Child.swift in Sources */,
+				C51F93052DF2655300177D85 /* NaughtyListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
