@@ -17,7 +17,8 @@ struct DetailView: View {
     @State private var smacks = 1
     @State private var notes = ""
     @State private var audioPlayer: AVAudioPlayer!
-    @State private var isFullSize = true
+    @State private var boyIsFullSize = true
+    @State private var girlIsFullSize = true
     @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) private var dismiss
     
@@ -60,13 +61,12 @@ struct DetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
-//                    .border(Color.gray, width: 1)
-                    .scaleEffect(isFullSize ? 1.0 : 0.9)
+                    .scaleEffect(boyIsFullSize ? 1.0 : 0.9)
                     .onTapGesture {
                         playSound(soundName: "smack")
-                        isFullSize = false // will immediately shrink using . scaleEffect to 90% of size
+                        boyIsFullSize = false // will immediately shrink using . scaleEffect to 90% of size
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.3)) {
-                            isFullSize = true // will go from 90% to 100% size but using the .spring animation
+                            boyIsFullSize = true // will go from 90% to 100% size but using the .spring animation
                         }
                     }
                 
@@ -74,13 +74,12 @@ struct DetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
-//                    .border(Color.gray, width: 1)
-                    .scaleEffect(isFullSize ? 1.0 : 0.9)
+                    .scaleEffect(girlIsFullSize ? 1.0 : 0.9)
                     .onTapGesture {
                         playSound(soundName: "smack")
-                        isFullSize = false // will immediately shrink using . scaleEffect to 90% of size
+                        girlIsFullSize = false // will immediately shrink using . scaleEffect to 90% of size
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.3)) {
-                            isFullSize = true // will go from 90% to 100% size but using the .spring animation
+                            girlIsFullSize = true // will go from 90% to 100% size but using the .spring animation
                         }
                     }
             }
